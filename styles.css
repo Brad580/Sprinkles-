@@ -193,15 +193,12 @@ body[data-weather="snow"] .snow-field {
   position: absolute;
   top: -8vh;
   left: var(--snow-left);
-  color: rgba(255, 255, 255, 0.95);
-  font-style: normal;
-  font-size: clamp(1rem, 2vw, 1.8rem);
-  text-shadow: 0 2px 8px rgba(91, 130, 147, 0.18);
+  width: clamp(5px, 0.8vw, 10px);
+  height: clamp(5px, 0.8vw, 10px);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 8px rgba(91, 130, 147, 0.18);
   animation: snowfall var(--snow-speed) linear var(--snow-delay) infinite;
-}
-
-.snow-field i::before {
-  content: "•";
 }
 
 .snow-field i:nth-child(2) { --snow-left: 12%; --snow-delay: -6s; --snow-speed: 12s; }
